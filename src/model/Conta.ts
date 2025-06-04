@@ -1,7 +1,6 @@
-// conta bancaria
-// saldo
+import { colors } from "../util/Colors";
 
-export class Conta {
+export abstract class Conta {
 
     private _numero: number;
     private _agencia: number;
@@ -85,9 +84,11 @@ export class Conta {
                 break;
         }
 
-        console.log("\n\n*****************************************************");
+        console.log(colors.bg.black, colors.fg.yellow,
+            "\n\n*****************************************************", colors.reset);
         console.log("Dados da Conta:");
-        console.log("*****************************************************");
+        console.log(colors.bg.black, colors.fg.yellow,
+          "*****************************************************", colors.reset);
         console.log("Numero da Conta: " + this._numero);
         console.log("Agência: " + this._agencia);
         console.log("Tipo da Conta: " + tipo);

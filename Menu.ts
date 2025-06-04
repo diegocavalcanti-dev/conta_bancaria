@@ -1,14 +1,31 @@
 import readlinesync = require("readline-sync");
 import { colors } from "./src/util/Colors";
+import { ContaCorrente } from "./src/model/ContaCorrente";
+import { Conta } from "./src/model/Conta";
+import { ContaPoupanca } from "./src/model/ContaPoupanca";
 
 export function main() {
 
     let opcao: number;
 
+    // const contaCorrente: ContaCorrente = new ContaCorrente(1298, 1, 1, "Maria da Silva", 1000, 500);
+    // contaCorrente.visualizar();
+    // contaCorrente.sacar(1000);
+    // contaCorrente.visualizar();
+    // contaCorrente.depositar(2000);
+    // contaCorrente.visualizar();
+    
+    // const contaPoupanca: ContaPoupanca = new ContaPoupanca(3, 789, 2, "Mariana Souza", 1000, 10);
+    // contaPoupanca.visualizar();
+    // contaPoupanca.sacar(100);
+    // contaPoupanca.visualizar();
+    // contaPoupanca.depositar(1000);
+    // contaPoupanca.visualizar();
+
     while (true) {
 
         console.log(colors.bg.black, colors.fg.greenstrong,
-                    "*****************************************************");
+                    "\n*****************************************************");
         console.log("                                                     ");
         console.log("                BANCO DO BRAZIL COM Z                ");
         console.log("                                                     ");
